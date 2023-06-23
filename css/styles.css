@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/* Se importó desde Fonts la fuente IBM Plex Serif */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&display=swap');
 
 * {
 margin: 0;
@@ -23,7 +25,7 @@ main {
 /* Estilos Generales */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
     background-color: #fbfbfb;
     color: #0f0f0f;
     font-size: 18px;
@@ -113,6 +115,10 @@ section {
     display: inline-block;
 }
 
+.active {
+    background-color: rgb(134, 121, 121);
+}
+
 /* Section Contacto */
 
 .contacto {
@@ -150,3 +156,39 @@ section {
     height: 90px;
     color: #fbfbfb;
 }
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 48px;
+        text-align: left;
+    }
+
+    #inicio {
+        flex-direction: row;
+    }
+
+    .presentacion {
+        text-align: left;
+        width: 50%;
+    }
+
+    .presentacion p {
+        text-align: left;
+    }
+
+    .presentacion-img img {
+        margin-right: 50px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .contacto {
+        width: 40%;
+        border-radius: 10px;
+    }
+}
+
