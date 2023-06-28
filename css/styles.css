@@ -26,8 +26,9 @@ main {
 
 body {
     font-family: 'IBM Plex Serif', serif;
-    background-color: #fbfbfb;
-    color: #0f0f0f;
+    background-image: url(./img/Background\ 1.jpg);
+    background-attachment: fixed;
+    color: #73fffe;
     font-size: 18px;
     line-height: 1.2;
 }
@@ -73,10 +74,12 @@ header {
 .menu {
     display: flex;
     font-size: 20px;
+    color: #110d0d;
 }
 
 .menu li a {
-    padding: 36px;
+    border-radius: 50px;
+    padding: 15px 30px;
 }
 
 /* Section Inicio*/
@@ -107,7 +110,8 @@ section {
 }
 
 .btn {
-    background-color: rgb(134, 121, 121);
+    background: #00ddff;
+    box-shadow: 0 0 10px #00ddff, 0 0 40px #00ddff, 0 0 80px #00ddff;
     padding: 12px 20px;
     border-radius: 50px;
     font-size: 20px;
@@ -116,7 +120,12 @@ section {
 }
 
 .active {
-    background-color: rgb(134, 121, 121);
+    background-color:#00ddff;
+}
+
+.active:hover {
+    box-shadow: 0 0 10px #00ddff, 0 0 40px #00ddff, 0 0 80px #00ddff;
+    transition: 0.3s;
 }
 
 /* Section Contacto */
@@ -125,7 +134,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(224, 218, 218);
+    background-color: #13a8fe;
     padding: 30px 20px;
     border-radius: 50px;
     text-align: center;
@@ -152,7 +161,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(134, 121, 121);
+    background: #00ddff;
+    box-shadow: 0 0 10px #00ddff, 0 0 40px #00ddff, 0 0 80px #00ddff;
     height: 90px;
     color: #fbfbfb;
 }
@@ -160,6 +170,10 @@ section {
 /* Media Queries */
 
 @media (min-width: 1024px) {
+    body {
+        font-size: 22px;
+    }
+
     h1 {
         font-size: 48px;
         text-align: left;
