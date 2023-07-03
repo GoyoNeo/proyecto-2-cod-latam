@@ -145,13 +145,16 @@ section {
 .enlaces {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: center;
 }
 
 .email, .github, .linkedin {
+    background-color: #00ddff;
+    box-shadow: 0 0 10px #00ddff, 0 0 40px #00ddff, 0 0 80px #00ddff;
     width: 50px;
-    padding: 25px;
+    margin: 30px;
+    padding: 3px;
 }
 
 /* Footer */
